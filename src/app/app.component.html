@@ -1,0 +1,21 @@
+<header class="navbar container-fluid">
+  <nav class="container-fluid" id="menu" >
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://www.upm.es" target="_nueva">
+        <img src='assets/imgs/upmlogo.jpg' id='upmlogo' class='bordes_redondos'></a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav"  >
+        <li><a routerLink="home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="preferences" routerLinkActive="active">Preferences</a></li>
+        <li><a routerLink="play" routerLinkActive="active">Play</a></li>
+        <li><a routerLink="records" routerLinkActive="active">Records</a></li>
+        <li><a routerLink="register" routerLinkActive="active">Register</a></li>
+        <li><a routerLink="login" routerLinkActive="active">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<section class="container" id="contenedor">
+  <router-outlet></router-outlet>
+</section>
