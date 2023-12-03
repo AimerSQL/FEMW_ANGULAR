@@ -1,0 +1,59 @@
+#missile {
+    position: absolute;
+    bottom: 10px;
+    left: 300px;
+    height: 70px;
+}
+
+
+
+#points{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 18pt;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+#save{
+    position: absolute;
+    bottom: 150px;
+    right: 30px;
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 18pt;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+#time{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 150px;
+    height: 50px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 18pt;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.setOfUfos {
+    position: absolute;
+    left: 0px;
+    width: 60px;
+}

@@ -1,1 +1,23 @@
-<p>register works!</p>
+<div>
+    <legend>Registración</legend>
+    <form>
+      <div class="mb-3">
+        <label for="username" class="form-label">User name</label>
+        <input type="email" class="form-control" id="username" name="username" [(ngModel)]="username">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" [(ngModel)]="email">
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Clave</label>
+        <input type="password" class="form-control" id="pwd" name="password" [(ngModel)]="password">
+      </div>
+      <div class="mb-3">
+        <label for="pwdcheck" class="form-label">Repita la clave</label>
+        <input type="password" class="form-control" id="pwdcheck" name="passwordCheck" [(ngModel)]="passwordCheck">
+      </div>
+      <button type="button" id="btn" class="btn btn-primary" (click)="register()" [disabled]="!isFormValid()">Registrar</button>
+    </form>
+  </div>
+  

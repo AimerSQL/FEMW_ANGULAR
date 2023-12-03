@@ -1,1 +1,50 @@
-<p>records works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Records Generales</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Points</th>
+            <th>UFOs</th>
+            <th>Disposed Time</th>
+            <th>Record Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let record of myRecords">
+            <td>{{ record.username }}</td>
+            <td>{{ record.punctuation }}</td>
+            <td>{{ record.ufos }}</td>
+            <td>{{ record.disposedTime }}</td>
+            <td>{{ record.recordDate | date:'medium' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <h2>Records del Usuario</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Points</th>
+            <th>UFOs</th>
+            <th>Disposed Time</th>
+            <th>Record Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let record of userRecords">
+            <td>{{ record.username }}</td>
+            <td>{{ record.punctuation }}</td>
+            <td>{{ record.ufos }}</td>
+            <td>{{ record.disposedTime }}</td>
+            <td>{{ record.recordDate | date:'medium' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

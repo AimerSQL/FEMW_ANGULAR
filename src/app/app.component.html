@@ -11,7 +11,13 @@
         <li><a routerLink="play" routerLinkActive="active">Play</a></li>
         <li><a routerLink="records" routerLinkActive="active">Records</a></li>
         <li><a routerLink="register" routerLinkActive="active">Register</a></li>
-        <li><a routerLink="login" routerLinkActive="active">Login</a></li>
+        <ng-container *ngIf="isLoggedIn(); else loginLink">
+          <li><a (click)="logout()" routerLinkActive="active">Logout</a></li>
+        </ng-container>
+        <ng-template #loginLink>
+          <li><a routerLink="login" routerLinkActive="active">Login</a></li>
+        </ng-template>
+        
       </ul>
     </div>
   </nav>

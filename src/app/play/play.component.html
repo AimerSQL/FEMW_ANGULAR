@@ -1,1 +1,5 @@
-<p>play works!</p>
+<div #container id='container'></div>
+<img #missile id='missile' src='../../assets/imgs/misil.png' style="left:300px;bottom:10px;height:70px;width:40px;z-index: 10;" />
+<div #time id='time'></div>
+<div #points id='points'>0</div>
+<button id='save' [disabled]="!gameOver" (click)="save()">Guardar</button>

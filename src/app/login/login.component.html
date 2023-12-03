@@ -1,1 +1,15 @@
-<p>login works!</p>
+<div>
+    <form>
+      <legend>Login</legend>
+      <div class="mb-3">
+        <label for="username" class="form-label">User name</label>
+        <input type="email" class="form-control" id="username" name="username" [(ngModel)]="username">
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Clave</label>
+        <input type="password" class="form-control" id="pwd" name="pwd" [(ngModel)]="password">
+      </div>
+      <button type="button" id="btn" class="btn btn-primary" (click)="dologin()" [disabled]="!isFormValid()">Login</button>
+    </form>
+  </div>
+  
