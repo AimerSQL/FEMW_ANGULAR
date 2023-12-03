@@ -33,7 +33,7 @@ export class RegisterComponent {
 
     this.conex.registerUser(this.username, this.email, this.password).subscribe(
       () => {
-        console.log('Registration successful:');
+        alert('Registration successful!')
       },
       (error) => {
         if (error.status === 400) {

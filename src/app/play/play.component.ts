@@ -290,7 +290,7 @@ export class PlayComponent implements OnInit, OnDestroy {
   
     this.conex.save(finalScore, storedRangeValue, storedSelectedTime).subscribe(
       () => {
-        console.log('Record saved successfully:');
+        alert('Record saved successfully:' + finalScore)
       },
       (error) => {
         console.error('Error saving record:', error);
